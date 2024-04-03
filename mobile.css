@@ -1,0 +1,268 @@
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 0.8rem;
+  }
+
+  .navbar img {
+    height: 4rem;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  header {
+    height: 10vh;
+  }
+
+  .nav-wrapper {
+    background-color: #e2cda1;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .navbar ul {
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 5rem;
+    background-color: #e2cda1;
+    border: none;
+    width: 100%;
+    height: calc(100vh);
+    transform: translate(-101%);
+    text-align: center;
+    overflow: hidden;
+    translate: none;
+  }
+
+  .navbar li {
+    padding: 15px;
+  }
+
+  .navbar li:first-child {
+    margin-top: 5rem;
+  }
+
+  .navbar li a {
+    font-size: 1.5rem;
+  }
+
+  #hero {
+    margin-top: 3rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .menu-toggle,
+  .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle .bar {
+    background-color: #571b11;
+  }
+
+  .mobile-nav {
+    transform: translate(0%) !important;
+  }
+
+  #menu {
+    margin-top: 4rem;
+  }
+
+  #menu h1 {
+    font-size: 2.5rem;
+  }
+
+  #about h1 {
+    font-size: 2.5rem;
+  }
+
+  #contact h1 {
+    font-size: 2.5rem;
+  }
+
+  .form-input {
+    font-size: 1rem;
+    padding: 0.75rem 1rem 0.75rem 3.5rem;
+  }
+
+  .form-title {
+    margin-top: 2rem;
+  }
+
+  .form-text {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .form-input-grid {
+    margin: 0rem 0;
+    grid-column-gap: 0em;
+  }
+
+  .form-input-wrapper i {
+    top: 0.75rem;
+    font-size: 1.5rem;
+  }
+
+  #message {
+    border-radius: 2rem;
+  }
+  .send-btn {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .send-btn i {
+    font-size: 1.3rem;
+  }
+
+  .foot-logo {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .foot-logo img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .footer-basic ul {
+    font-size: 1rem;
+  }
+
+  .footer-basic li {
+    padding: 0.25rem 0.75rem;
+  }
+
+  .footer-basic .social {
+    margin-top: 0.5rem;
+    padding: 0.75rem 0rem;
+  }
+
+  .footer-basic .social > a {
+    font-size: 1.5rem;
+  }
+
+  .footer-basic .copyright {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #hero {
+    height: 75vh;
+  }
+
+  :root {
+    --heading: 2.4rem;
+  }
+  #form {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1660px) {
+  :root {
+    --heading: 3rem;
+  }
+}
+@media only screen and (max-width: 1456px) {
+  :root {
+    --heading: 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 756px) {
+  .menu-container .card {
+    display: none;
+  }
+
+  #about{
+    margin-top: 3.5rem;
+  }
+
+  #load {
+    display: block;
+    color: #571b11;
+    margin: auto;
+    padding: 0.75rem 1rem;
+    background-color: transparent;
+    font-family: "space grotesk";
+    font-weight: 600;
+    border-radius: 3rem;
+    font-size: 1rem;
+    border: 1.75px solid #571b11;
+  }
+
+  #load i{
+    font-size: 1rem;
+  }
+
+  .menu-container .card:nth-child(1),
+  .menu-container .card:nth-child(2),
+  .menu-container .card:nth-child(3),
+  .menu-container .card:nth-child(4){
+    display: grid;
+  }
+
+  .hero-content {
+    padding-left: 0rem;
+    padding-top: 21rem;
+    width: 60%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content button {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .hero-content a {
+    margin-top: -10px;
+  }
+
+  :root {
+    --heading: 2.2rem;
+  }
+  #form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .form-input-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 496px) {
+  .carousel .content {
+    padding: 10px;
+  }
+
+  .carousel .img-list img {
+    filter: blur(3px);
+  }
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    line-height: 1.1;
+  }
+
+  :root {
+    --heading: 1.75rem;
+  }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Shop</title>
+  <link rel="icon" type="image/x-icon" href="/Assets/Icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://unicons.iconscout.com/release/v3.0.0/css/line.css'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mobile.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="nav-wrapper">
+    <nav class="navbar">
+      <img src="/Assets/Logo.png" alt="Company Logo">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav">
+        <li class="nav-item"><a href="#hero">Home</a></li>
+        <li class="nav-item"><a href="#menu">Coffee</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="login">
+        <li class="login-child"><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <section id="hero">
+    <div class="hero-content">
+      <h1><span style="font-style: italic">D</span>iscover <span style="font-style: italic">y</span>our <span
+          style="font-style: italic">p</span>erfect <span style="font-style: italic">b</span>lend</h1>
+      <a href="#menu"><button>Brew Now</button></a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h1><span style="font-style: italic">M</span>enu</h1>
+    <div class="menu-container">
+
+      <div class="card">
+        <img src="/Assets/cappuccino.jpg" />
+        <h3>Cappuccino<br>&#8377;250</h3>
+        <button class="menu-btn"><span class="text">Buy Now</span></button>
+      </div>
+      <div class="card">
+        <img src="/Assets/espresso.jpg" />
+        <h3>Espresso<br>&#8377;225</h3>
+        <button class="menu-btn"><span class="text">Buy Now</span></button>
+      </div>
+      <div class="card">
+        <img src="/Assets/latte.jpg" />
+        <h3>Latte<br>&#8377;250</h3>
+        <button class="menu-btn"><span class="text">Buy Now</span></button>
+      </div>
+      <div class="card">
+        <img src="/Assets/Americano.jpg" />
+        <h3>Americano<br>&#8377;200</h3>
+        <button class="menu-btn"><span class="text">Buy Now</span></button>
+      </div>
+      <div class="card">
+        <img src="/Assets/cold-cafe.jpg" />
+        <h3>Cold Coffee<br>&#8377;175</h3>
+        <button class="menu-btn"><span class="text">Buy Now</span></button>
+      </div>
+      <div class="card">
+        <img src="/Assets/frappe.jpeg" />
+        <h3>Frappuccino<br>&#8377;300</h3>
+        <button class="menu-btn"><span class="text">Buy Now</span></button>
+      </div>
+      <div class="card">
+        <img src="/Assets/pancake.jpg" />
+        <h3>Pancake<br>&#8377;350</h3>
+        <button class="menu-btn"><span class="text">Buy Now</span></button>
+      </div>
+      <div class="card">
+        <img src="/Assets/cheesecake.jpg" />
+        <h3>Cheesecake<br>&#8377;250</h3>
+        <button class="menu-btn"><span class="text">Buy Now</span></button>
+      </div>
+    </div>
+    <button id="load">View More <i class="uil uil-angle-down"></i></button>
+  </section>
+
+  <div id="about">
+    <h1><span style="font-style: italic">A</span>bout us</h1>
+    <section class="carousel">
+      <div class="img-list" id="img-list">
+        <img src="/Assets/carousel-1.jpg" alt="Unsplash Photo" width="770">
+        <img src="/Assets/carousel-2.jpg" alt="Unsplash Photo" width="770">
+        <img src="/Assets/carousel-3.jpeg" alt="Unsplash Photo" width="770">
+      </div>
+      <div class="content">
+        <div class="text-content" onclick="slideText(0)">
+          <h2>QScript Coffee: Brewing Joy Daily</h2>
+          <p>At QScript Coffee, we are more than just a place to grab your daily caffeine fix. We are a vibrant
+            community hub dedicated to crafting exceptional coffee experiences while fostering meaningful connections
+            among our customers. QScript Coffee has been a cherished part of the local community since 2011. Our journey
+            began with a simple yet ambitious goal to create a welcoming space where everyone feels at home, from coffee
+            aficionados to casual visitors seeking a cozy spot to unwind Come sip, savor, and create memories with us at
+            QScript Coffee where every cup tells a story.
+          </p>
+        </div>
+      </div>
+      <div class="btn-section">
+        <div class="caro-btn" onclick="slideImg(0)"></div>
+        <div class="caro-btn" onclick="slideImg(1)"></div>
+        <div class="caro-btn" onclick="slideImg(2)"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="form-wrapper">
+        <form id="form" method="post" name="emailform" action="email.php">
+          <h1 class="form-title"><span style="font-style: italic">C</span>ontact us</h1>
+          <div class="form-input-grid">
+            <div>
+              <p class="form-text">Name*</p>
+              <div class="form-input-wrapper">
+                <i class="uil uil-user"></i>
+                <input class="form-input" id="uname" name="uname" type="text" placeholder="Your Name" required>
+              </div>
+            </div>
+            <div>
+              <p class="form-text">Mobile</p>
+              <div class="form-input-wrapper">
+                <i class="uil uil-phone"></i>
+                <input class="form-input" id="mobile" name="mobile" type="tel" placeholder="Mobile no." maxlength="10"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+              </div>
+            </div>
+          </div>
+          <div class="form-input-max">
+            <p class="form-text">Email*</p>
+            <div class="form-input-wrapper">
+              <i class="uil uil-at"></i>
+              <input class="form-input" id="email" name="email" type="email" placeholder="Email"
+                pattern=".+@example\.com" maxlength="70" required>
+            </div>
+          </div>
+          <div class="form-input-max">
+            <p class="form-text">Message*</p>
+            <div id="textarea" class="form-input-wrapper">
+              <i class="uil uil-comment-dots"></i>
+              <textarea class="form-input" id="message" name="message" placeholder="Your message" maxlength="500"
+                required></textarea>
+            </div>
+          </div>
+          <div class="form-input-max">
+            <div class="button-wrapper">
+              <button id="form-button" type="submit" class="send-btn btn-primary"><i class="uil uil-coffee"></i>
+                Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="footer">
+      <hr style="height:2px;border-width:0;background-color:#f9fdc0">
+      <div class="footer-basic">
+        <hr style="height:2.5px;border-width:0;background-color:#f9fdc0">
+        <footer>
+          <div class="foot-logo">
+            <img src="/Assets/Logo.png" alt="Company Logo">
+          </div>  
+          <div class="social">
+            <a href="#"><i class="uil uil-instagram"></i></a>
+            <a href="#"><i class="uil uil-snapchat-alt"></i></a>
+            <a href="#"><i class="uil uil-twitter-alt"></i></a>
+            <a href="#"><i class="uil uil-facebook-f"></i></a>
+          </div>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#hero">Home</a></li>
+            <li class="list-inline-item"><a href="#menu">Order</a></li>
+            <li class="list-inline-item"><a href="#contact">Contact</a></li>
+            <li class="list-inline-item"><a href="#about">About</a></li>
+            <li class="list-inline-item"><a href="#">Visit us</a></li>
+          </ul>
+          <p class="copyright">QScript Coffee © 2024</p>
+        </footer>
+      </div>
+    </section>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
