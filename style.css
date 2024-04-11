@@ -109,7 +109,7 @@ body {
 #hero {
   width: 90%;
   height: 80vh;
-  background-image: URL("/Assets/mains.jpeg");
+  background-image: URL("./Assets/mains.jpeg");
   background-size: cover;
   background-position: center;
   border-radius: 2rem;
